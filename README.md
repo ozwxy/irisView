@@ -7,8 +7,6 @@
 [![License](https://img.shields.io/cocoapods/l/irisView.svg?style=flat)](http://cocoapods.org/pods/irisView)
 [![Platform](https://img.shields.io/cocoapods/p/irisView.svg?style=flat)](http://cocoapods.org/pods/irisView)
 
-**BouncyLayout** is a collection view layout that makes your cells bounce.
-
 ## Features
 
 - [X] Pure Swift 3.
@@ -17,7 +15,6 @@
 ![](irisView.gif)
 
 ## Setup
-The only you thing you need to do is import `BouncyLayout`, create an instance and add it to your `UICollectionView`.
 ```swift
 import irisView
 ```
