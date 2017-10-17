@@ -14,7 +14,7 @@
 - [X] Pure Swift 3.
 - [X] Beautiful Colorful Picker.
 
-![](https://github.com/ozwio/irisView/iris.gif)
+![](irisView.gif)
 
 ## Setup
 The only you thing you need to do is import `BouncyLayout`, create an instance and add it to your `UICollectionView`.
