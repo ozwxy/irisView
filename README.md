@@ -5,9 +5,58 @@
 [![License](https://img.shields.io/cocoapods/l/irisView.svg?style=flat)](http://cocoapods.org/pods/irisView)
 [![Platform](https://img.shields.io/cocoapods/p/irisView.svg?style=flat)](http://cocoapods.org/pods/irisView)
 
+**BouncyLayout** is a collection view layout that makes your cells bounce.
+
+## Features
+
+- [X] Pure Swift 3.
+- [X] Beautiful Colorful Picker.
+
+## Setup
+The only you thing you need to do is import `BouncyLayout`, create an instance and add it to your `UICollectionView`.
+```swift
+import irisView
+```
+```swift
+let colorPicker = irisView(frame: CGRect(x: 0, y: 0, width: pickerWidth, height: pickerHeight))
+```
+```swift
+colorPicker.colors = [UIColor.red, UIColor.blue, ...]
+colorPicker.center = CGPoint(x: view.frame.width/2, y: view.frame.height/2)
+colorPicker.radius = pickerWidth/2
+colorPicker.isShadowed = true
+view.addSubview(colorPicker)
+```
+
+```swift
+override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        colorPicker.detect(touches, with: event)
+}
+
+override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+        colorPicker.detect(touches, with: event)
+}
+
+override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        colorPicker.detect(touches, with: event, end: true)
+}
+```
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
+
+To get the selected picker, add this code.
+```swift
+override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        colorPicker.detect(touches, with: event)
+
+        do {
+        	let obj = try colorPicker.detected()
+        	print("i: \(obj.0), layer: \(obj.1)")
+        } catch {}
+}
+```
 
 ## Requirements
 
