@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'irisView_Example' do
+  pod 'irisView', :path => '../'
+
+  target 'irisView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
