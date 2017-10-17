@@ -1,5 +1,7 @@
 # irisView
 
+![](iris.png)
+
 [![CI Status](http://img.shields.io/travis/ozwio/irisView.svg?style=flat)](https://travis-ci.org/ozwio/irisView)
 [![Version](https://img.shields.io/cocoapods/v/irisView.svg?style=flat)](http://cocoapods.org/pods/irisView)
 [![License](https://img.shields.io/cocoapods/l/irisView.svg?style=flat)](http://cocoapods.org/pods/irisView)
