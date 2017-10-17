@@ -1,0 +1,6 @@
+framework module Pods_irisView_Example {
+  umbrella header "Pods-irisView_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

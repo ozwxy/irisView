@@ -1,0 +1,6 @@
+framework module irisView {
+  umbrella header "irisView-umbrella.h"
+
+  export *
+  module * { export * }
+}
